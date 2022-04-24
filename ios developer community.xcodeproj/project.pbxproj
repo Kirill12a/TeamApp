@@ -69,14 +69,46 @@
 		D28787082815751B006CB00B /* ios developer community */ = {
 			isa = PBXGroup;
 			children = (
-				D28787092815751B006CB00B /* AppDelegate.swift */,
-				D287870B2815751B006CB00B /* SceneDelegate.swift */,
-				D287870D2815751B006CB00B /* OurLinksViewController.swift */,
-				D28787122815751D006CB00B /* Assets.xcassets */,
-				D28787142815751D006CB00B /* LaunchScreen.storyboard */,
+				D287872028158895006CB00B /* SupportingFiles */,
+				D287871F28158856006CB00B /* Model */,
+				D287871E28158851006CB00B /* View */,
+				D287871D2815884B006CB00B /* Controller */,
 				D28787172815751D006CB00B /* Info.plist */,
 			);
 			path = "ios developer community";
+			sourceTree = "<group>";
+		};
+		D287871D2815884B006CB00B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D287870D2815751B006CB00B /* OurLinksViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D287871E28158851006CB00B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D28787142815751D006CB00B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D287871F28158856006CB00B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D287872028158895006CB00B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D28787122815751D006CB00B /* Assets.xcassets */,
+				D287870B2815751B006CB00B /* SceneDelegate.swift */,
+				D28787092815751B006CB00B /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		DDF33772BF6B6A74DB2D0683 /* Pods */ = {
