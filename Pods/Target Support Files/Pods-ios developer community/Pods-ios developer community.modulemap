@@ -1,0 +1,6 @@
+framework module Pods_ios_developer_community {
+  umbrella header "Pods-ios developer community-umbrella.h"
+
+  export *
+  module * { export * }
+}
