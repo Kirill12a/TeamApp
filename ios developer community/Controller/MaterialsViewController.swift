@@ -15,7 +15,10 @@ class MaterialsViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+//        cell.style
         cell.textLabel?.text = "Name"
+
         return cell
     }
 
@@ -24,8 +27,7 @@ class MaterialsViewController: UIViewController, UITableViewDataSource {
     override func loadView() {
         super.loadView()
         self.view = material
-        material.table.dataSource = self
-        print("fds")
+
     }
 
 
@@ -33,6 +35,11 @@ class MaterialsViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("fds")
+        material.table.dataSource = self
+
     }
 
+    override func viewDidLayoutSubviews() {
+        material.table.frame = view.bounds
+    }
 }

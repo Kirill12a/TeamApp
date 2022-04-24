@@ -13,7 +13,9 @@ class MaterialsViewElements: UIView {
     lazy var table: UITableView = {
         var tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-//        tableView.headerView
+        tableView.backgroundColor = .white
+
+        
         return tableView
     }()
 
@@ -31,6 +33,7 @@ class MaterialsViewElements: UIView {
         self.addSubview(table)
         table.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaInsets.top)
+//            make.top.equalToSuperview()
             make.leading.trailing.equalToSuperview() // ??
             make.top.equalToSuperview()
         }
