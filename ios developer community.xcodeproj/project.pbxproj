@@ -13,6 +13,10 @@
 		D287870E2815751B006CB00B /* OurLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287870D2815751B006CB00B /* OurLinksViewController.swift */; };
 		D28787132815751D006CB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28787122815751D006CB00B /* Assets.xcassets */; };
 		D28787162815751D006CB00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28787142815751D006CB00B /* LaunchScreen.storyboard */; };
+		D2878722281589C7006CB00B /* CourseSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2878721281589C7006CB00B /* CourseSource.swift */; };
+		D287872428158A3E006CB00B /* SourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287872328158A3E006CB00B /* SourceCell.swift */; };
+		D2878726281593D9006CB00B /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2878725281593D9006CB00B /* MaterialsViewController.swift */; };
+		D28787282815946F006CB00B /* MaterialsViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28787272815946F006CB00B /* MaterialsViewElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		D28787122815751D006CB00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28787152815751D006CB00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D28787172815751D006CB00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2878721281589C7006CB00B /* CourseSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSource.swift; sourceTree = "<group>"; };
+		D287872328158A3E006CB00B /* SourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCell.swift; sourceTree = "<group>"; };
+		D2878725281593D9006CB00B /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
+		D28787272815946F006CB00B /* MaterialsViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewElements.swift; sourceTree = "<group>"; };
 		DFCF241D9D5899B40522414F /* Pods-ios developer community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios developer community.debug.xcconfig"; path = "Target Support Files/Pods-ios developer community/Pods-ios developer community.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D287870D2815751B006CB00B /* OurLinksViewController.swift */,
+				D2878725281593D9006CB00B /* MaterialsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				D28787142815751D006CB00B /* LaunchScreen.storyboard */,
+				D287872328158A3E006CB00B /* SourceCell.swift */,
+				D28787272815946F006CB00B /* MaterialsViewElements.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +108,7 @@
 		D287871F28158856006CB00B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2878721281589C7006CB00B /* CourseSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,9 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D287872428158A3E006CB00B /* SourceCell.swift in Sources */,
+				D28787282815946F006CB00B /* MaterialsViewElements.swift in Sources */,
 				D287870E2815751B006CB00B /* OurLinksViewController.swift in Sources */,
 				D287870A2815751B006CB00B /* AppDelegate.swift in Sources */,
+				D2878726281593D9006CB00B /* MaterialsViewController.swift in Sources */,
 				D287870C2815751B006CB00B /* SceneDelegate.swift in Sources */,
+				D2878722281589C7006CB00B /* CourseSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
