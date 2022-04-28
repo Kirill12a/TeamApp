@@ -33,7 +33,7 @@ final class MaterialsViewController: UIViewController {
     // тут я хотел делать переход на второй экран(из фигмы), но не воркает
     @objc func cellTouch(){
 
-        let collectionVC = LinksViewController()
+        let collectionVC = OurLinksViewController()
         navigationController?.pushViewController(collectionVC, animated: true)
     }
 

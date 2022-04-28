@@ -77,6 +77,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D245D7D1281B32D500180AD0 /* LibraryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D245D7C1281B244800180AD0 /* MaterialsViewController.swift */,
+			);
+			path = LibraryScreen;
+			sourceTree = "<group>";
+		};
+		D245D7D2281B341700180AD0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D245D7C5281B246B00180AD0 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		D28786FD2815751B006CB00B = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +126,9 @@
 		D287871D2815884B006CB00B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D245D7C1281B244800180AD0 /* MaterialsViewController.swift */,
+				D245D7D1281B32D500180AD0 /* LibraryScreen */,
 				D245D7C3281B245D00180AD0 /* LinksViewController.swift */,
-				D245D7C5281B246B00180AD0 /* TabBar.swift */,
+				D245D7D2281B341700180AD0 /* TabBar */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

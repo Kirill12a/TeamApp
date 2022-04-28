@@ -13,7 +13,7 @@ class MainTabBarController: UITabBarController {
     super.viewDidLoad()
 
     let searchVC      =    MaterialsViewController()
-    let favouriteVC   =   LinksViewController()
+    let favouriteVC   =   OurLinksViewController()
 
     viewControllers = [
       setUpNavigationController(title: "Новости", image: UIImage(systemName: "newspaper"), rootViewController: searchVC),

@@ -132,7 +132,7 @@ extension MaterialsView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         MaterialsViewController.singltone.cellTouch()
 
-                let collectionVC = LinksViewController()
+                let collectionVC = OurLinksViewController()
                 MaterialsViewController.singltone.navigationController?.pushViewController(collectionVC, animated: true)
     }
 
