@@ -2,44 +2,46 @@
 //  MaterialsViewController.swift
 //  ios developer community
 //
-//  Created by Kirill Drozdov on 24.04.2022.
+//  Created by Kirill Drozdov on 28.04.2022.
 //
 
+import Foundation
 import UIKit
 
-class MaterialsViewController: UIViewController, UITableViewDataSource {
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
+final class MaterialsViewController: UIViewController {
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    static var singltone = MaterialsViewController()
+    // private init
 
-//        cell.style
-        cell.textLabel?.text = "Name"
 
-        return cell
-    }
-
-    let material = MaterialsViewElements()
+    // Это данные для collectionView
+    // хз тут это нужно делать или нет.
+    let mainMaterialsName = [MainMaterialModel(name: "Apple Doka"), MainMaterialModel(name: "Swift Book")]
 
     override func loadView() {
         super.loadView()
-        self.view = material
-
+        view = MaterialsView()
     }
-
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("fds")
-        material.table.dataSource = self
-
+        view.backgroundColor = UIColor(named: "bg")
+        setupNavController()
     }
 
-    override func viewDidLayoutSubviews() {
-        material.table.frame = view.bounds
+    // тут я хотел делать переход на второй экран(из фигмы), но не воркает
+    @objc func cellTouch(){
+
+        let collectionVC = LinksViewController()
+        navigationController?.pushViewController(collectionVC, animated: true)
+    }
+
+    private func setupNavController() {
+        title = "Материалы"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            .font: UIFont.systemFont(ofSize: 40, weight: .bold)
+        ]
     }
 }

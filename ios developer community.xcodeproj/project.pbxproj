@@ -8,31 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		3F5AD2708F82FBC84ECE7DCF /* Pods_ios_developer_community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C42A7E7AAA10147E68696 /* Pods_ios_developer_community.framework */; };
+		D245D7C2281B244800180AD0 /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C1281B244800180AD0 /* MaterialsViewController.swift */; };
+		D245D7C4281B245D00180AD0 /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C3281B245D00180AD0 /* LinksViewController.swift */; };
+		D245D7C6281B246B00180AD0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C5281B246B00180AD0 /* TabBar.swift */; };
+		D245D7C8281B248800180AD0 /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C7281B248800180AD0 /* MaterialsView.swift */; };
+		D245D7CB281B24A400180AD0 /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7CA281B24A400180AD0 /* CellCollectionView.swift */; };
+		D245D7CE281B24C400180AD0 /* OurMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7CD281B24C400180AD0 /* OurMaterials.swift */; };
+		D245D7D0281B24CF00180AD0 /* MainMaterialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7CF281B24CF00180AD0 /* MainMaterialsModel.swift */; };
 		D287870A2815751B006CB00B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28787092815751B006CB00B /* AppDelegate.swift */; };
 		D287870C2815751B006CB00B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287870B2815751B006CB00B /* SceneDelegate.swift */; };
-		D287870E2815751B006CB00B /* OurLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287870D2815751B006CB00B /* OurLinksViewController.swift */; };
 		D28787132815751D006CB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28787122815751D006CB00B /* Assets.xcassets */; };
 		D28787162815751D006CB00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28787142815751D006CB00B /* LaunchScreen.storyboard */; };
-		D2878722281589C7006CB00B /* CourseSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2878721281589C7006CB00B /* CourseSource.swift */; };
-		D287872428158A3E006CB00B /* SourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287872328158A3E006CB00B /* SourceCell.swift */; };
-		D2878726281593D9006CB00B /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2878725281593D9006CB00B /* MaterialsViewController.swift */; };
-		D28787282815946F006CB00B /* MaterialsViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28787272815946F006CB00B /* MaterialsViewElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B58C42A7E7AAA10147E68696 /* Pods_ios_developer_community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_developer_community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C813EED3335884DA5A0F3C54 /* Pods-ios developer community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios developer community.release.xcconfig"; path = "Target Support Files/Pods-ios developer community/Pods-ios developer community.release.xcconfig"; sourceTree = "<group>"; };
+		D245D7C1281B244800180AD0 /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
+		D245D7C3281B245D00180AD0 /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
+		D245D7C5281B246B00180AD0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D245D7C7281B248800180AD0 /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
+		D245D7CA281B24A400180AD0 /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
+		D245D7CD281B24C400180AD0 /* OurMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurMaterials.swift; sourceTree = "<group>"; };
+		D245D7CF281B24CF00180AD0 /* MainMaterialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMaterialsModel.swift; sourceTree = "<group>"; };
 		D28787062815751B006CB00B /* ios developer community.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios developer community.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28787092815751B006CB00B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D287870B2815751B006CB00B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D287870D2815751B006CB00B /* OurLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLinksViewController.swift; sourceTree = "<group>"; };
 		D28787122815751D006CB00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28787152815751D006CB00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D28787172815751D006CB00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2878721281589C7006CB00B /* CourseSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSource.swift; sourceTree = "<group>"; };
-		D287872328158A3E006CB00B /* SourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCell.swift; sourceTree = "<group>"; };
-		D2878725281593D9006CB00B /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
-		D28787272815946F006CB00B /* MaterialsViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewElements.swift; sourceTree = "<group>"; };
 		DFCF241D9D5899B40522414F /* Pods-ios developer community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios developer community.debug.xcconfig"; path = "Target Support Files/Pods-ios developer community/Pods-ios developer community.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,23 @@
 				B58C42A7E7AAA10147E68696 /* Pods_ios_developer_community.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D245D7C9281B249900180AD0 /* MaterialsScreenCellCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D245D7CA281B24A400180AD0 /* CellCollectionView.swift */,
+			);
+			path = MaterialsScreenCellCollectionView;
+			sourceTree = "<group>";
+		};
+		D245D7CC281B24B600180AD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D245D7CD281B24C400180AD0 /* OurMaterials.swift */,
+				D245D7CF281B24CF00180AD0 /* MainMaterialsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D28786FD2815751B006CB00B = {
@@ -78,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D287872028158895006CB00B /* SupportingFiles */,
-				D287871F28158856006CB00B /* Model */,
+				D245D7CC281B24B600180AD0 /* Model */,
 				D287871E28158851006CB00B /* View */,
 				D287871D2815884B006CB00B /* Controller */,
 				D28787172815751D006CB00B /* Info.plist */,
@@ -89,8 +110,9 @@
 		D287871D2815884B006CB00B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D287870D2815751B006CB00B /* OurLinksViewController.swift */,
-				D2878725281593D9006CB00B /* MaterialsViewController.swift */,
+				D245D7C1281B244800180AD0 /* MaterialsViewController.swift */,
+				D245D7C3281B245D00180AD0 /* LinksViewController.swift */,
+				D245D7C5281B246B00180AD0 /* TabBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,18 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				D28787142815751D006CB00B /* LaunchScreen.storyboard */,
-				D287872328158A3E006CB00B /* SourceCell.swift */,
-				D28787272815946F006CB00B /* MaterialsViewElements.swift */,
+				D245D7C7281B248800180AD0 /* MaterialsView.swift */,
+				D245D7C9281B249900180AD0 /* MaterialsScreenCellCollectionView */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D287871F28158856006CB00B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D2878721281589C7006CB00B /* CourseSource.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		D287872028158895006CB00B /* SupportingFiles */ = {
@@ -246,13 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D287872428158A3E006CB00B /* SourceCell.swift in Sources */,
-				D28787282815946F006CB00B /* MaterialsViewElements.swift in Sources */,
-				D287870E2815751B006CB00B /* OurLinksViewController.swift in Sources */,
+				D245D7CB281B24A400180AD0 /* CellCollectionView.swift in Sources */,
+				D245D7C4281B245D00180AD0 /* LinksViewController.swift in Sources */,
+				D245D7C2281B244800180AD0 /* MaterialsViewController.swift in Sources */,
 				D287870A2815751B006CB00B /* AppDelegate.swift in Sources */,
-				D2878726281593D9006CB00B /* MaterialsViewController.swift in Sources */,
+				D245D7C8281B248800180AD0 /* MaterialsView.swift in Sources */,
+				D245D7D0281B24CF00180AD0 /* MainMaterialsModel.swift in Sources */,
+				D245D7CE281B24C400180AD0 /* OurMaterials.swift in Sources */,
 				D287870C2815751B006CB00B /* SceneDelegate.swift in Sources */,
-				D2878722281589C7006CB00B /* CourseSource.swift in Sources */,
+				D245D7C6281B246B00180AD0 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
