@@ -131,9 +131,9 @@ extension MaterialsView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         MaterialsViewController.singltone.cellTouch()
-        
         let collectionVC = OurLinksViewController()
         MaterialsViewController.singltone.navigationController?.pushViewController(collectionVC, animated: true)
+
     }
     
 }
@@ -141,10 +141,12 @@ extension MaterialsView: UITableViewDelegate, UITableViewDataSource {
 extension MaterialsView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)-> CGSize{
+
         return CGSize(width: self.frame.width - 33,  height: self.frame.height / 17 )
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
         return MaterialsViewController.singltone.mainMaterialsName.count
     }
     
@@ -163,11 +165,11 @@ extension MaterialsView: UICollectionViewDelegate, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top:5, left: 16, bottom: 10, right: 16)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
-        
-        
+
     }
 }

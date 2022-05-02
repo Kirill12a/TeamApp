@@ -8,7 +8,5 @@
 import Foundation
 
 struct MainMaterialModel{
-
     var name: String
-
 }

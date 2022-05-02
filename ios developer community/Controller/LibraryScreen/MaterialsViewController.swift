@@ -66,7 +66,6 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.layer.cornerRadius = 12.0
         cell.backgroundColor = UIColor(red: 0.788, green: 0.8, blue: 0.82, alpha: 0.24)
 
-
         return cell
     }
 
