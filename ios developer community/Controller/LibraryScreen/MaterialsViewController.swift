@@ -28,7 +28,6 @@ final class MaterialsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "bg")
         setupNavController()
-        
     }
 
     // тут я хотел делать переход на второй экран(из фигмы), но не воркает
