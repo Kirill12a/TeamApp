@@ -23,8 +23,6 @@ class MainTabBarController: UITabBarController {
         tabBar.backgroundColor = UIColor(red: 243/255, green: 243/255, blue: 243/255, alpha: 0.94)
         tabBar.unselectedItemTintColor = .gray
         tabBar.tintColor = .red
-
-
     }
 
     private func setUpNavigationController(title: String, image: UIImage?, rootViewController: UIViewController) -> UIViewController {

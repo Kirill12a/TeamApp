@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 
-final class MaterialsViewController: UIViewController {
+// убрал final
+ class MaterialsViewController: UIViewController {
 
     static var singltone = MaterialsViewController()
     // private init
@@ -23,6 +24,8 @@ final class MaterialsViewController: UIViewController {
         super.loadView()
         view = MaterialsView()
     }
+
+//    var materialsViewElements: UIView = MaterialsView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
