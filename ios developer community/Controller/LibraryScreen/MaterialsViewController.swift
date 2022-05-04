@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 
 
-// убрал final
- class MaterialsViewController: UIViewController {
+final class MaterialsViewController: UIViewController {
 
     static var singltone = MaterialsViewController()
     // private init
@@ -24,8 +23,6 @@ import UIKit
         super.loadView()
         view = MaterialsView()
     }
-
-//    var materialsViewElements: UIView = MaterialsView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +65,7 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
 
         cell.layer.cornerRadius = 12.0
         cell.backgroundColor = UIColor(red: 0.788, green: 0.8, blue: 0.82, alpha: 0.24)
+
 
         return cell
     }

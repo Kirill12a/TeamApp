@@ -88,8 +88,8 @@ class MaterialsView: UIView {
     private func setupCollectionView(){
         addSubview(collectionView)
         
-        collectionView.delegate = self      // нужно как то поменять тут self
-        collectionView.dataSource = self     // нужно как то поменять тут self
+        collectionView.delegate = self // нужно как то поменять тут self
+        collectionView.dataSource = self // нужно как то поменять тут self
         
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
