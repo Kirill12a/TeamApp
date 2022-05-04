@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3F5AD2708F82FBC84ECE7DCF /* Pods_ios_developer_community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C42A7E7AAA10147E68696 /* Pods_ios_developer_community.framework */; };
 		D245D7C2281B244800180AD0 /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C1281B244800180AD0 /* MaterialsViewController.swift */; };
-		D245D7C4281B245D00180AD0 /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C3281B245D00180AD0 /* LinksViewController.swift */; };
 		D245D7C6281B246B00180AD0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C5281B246B00180AD0 /* TabBar.swift */; };
 		D245D7C8281B248800180AD0 /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7C7281B248800180AD0 /* MaterialsView.swift */; };
 		D245D7CB281B24A400180AD0 /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245D7CA281B24A400180AD0 /* CellCollectionView.swift */; };
@@ -19,13 +18,13 @@
 		D287870C2815751B006CB00B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287870B2815751B006CB00B /* SceneDelegate.swift */; };
 		D28787132815751D006CB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28787122815751D006CB00B /* Assets.xcassets */; };
 		D28787162815751D006CB00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28787142815751D006CB00B /* LaunchScreen.storyboard */; };
+		D2DED84728230BB8002DC2AB /* DetaiInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DED84628230BB8002DC2AB /* DetaiInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B58C42A7E7AAA10147E68696 /* Pods_ios_developer_community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_developer_community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C813EED3335884DA5A0F3C54 /* Pods-ios developer community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios developer community.release.xcconfig"; path = "Target Support Files/Pods-ios developer community/Pods-ios developer community.release.xcconfig"; sourceTree = "<group>"; };
 		D245D7C1281B244800180AD0 /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
-		D245D7C3281B245D00180AD0 /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
 		D245D7C5281B246B00180AD0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		D245D7C7281B248800180AD0 /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
 		D245D7CA281B24A400180AD0 /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		D28787122815751D006CB00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28787152815751D006CB00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D28787172815751D006CB00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DED84628230BB8002DC2AB /* DetaiInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiInformation.swift; sourceTree = "<group>"; };
 		DFCF241D9D5899B40522414F /* Pods-ios developer community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios developer community.debug.xcconfig"; path = "Target Support Files/Pods-ios developer community/Pods-ios developer community.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D245D7D1281B32D500180AD0 /* LibraryScreen */,
-				D245D7C3281B245D00180AD0 /* LinksViewController.swift */,
+				D2DED848282313A6002DC2AB /* DetailScreen */,
 				D245D7D2281B341700180AD0 /* TabBar */,
 			);
 			path = Controller;
@@ -151,6 +151,14 @@
 				D28787092815751B006CB00B /* AppDelegate.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D2DED848282313A6002DC2AB /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D2DED84628230BB8002DC2AB /* DetaiInformation.swift */,
+			);
+			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 		DDF33772BF6B6A74DB2D0683 /* Pods */ = {
@@ -277,13 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D245D7CB281B24A400180AD0 /* CellCollectionView.swift in Sources */,
-				D245D7C4281B245D00180AD0 /* LinksViewController.swift in Sources */,
 				D245D7C2281B244800180AD0 /* MaterialsViewController.swift in Sources */,
 				D287870A2815751B006CB00B /* AppDelegate.swift in Sources */,
 				D245D7C8281B248800180AD0 /* MaterialsView.swift in Sources */,
 				D245D7D0281B24CF00180AD0 /* MainMaterialsModel.swift in Sources */,
 				D245D7CE281B24C400180AD0 /* OurMaterials.swift in Sources */,
 				D287870C2815751B006CB00B /* SceneDelegate.swift in Sources */,
+				D2DED84728230BB8002DC2AB /* DetaiInformation.swift in Sources */,
 				D245D7C6281B246B00180AD0 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

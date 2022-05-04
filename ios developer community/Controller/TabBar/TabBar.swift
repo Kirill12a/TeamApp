@@ -12,11 +12,11 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let newsVC      =    OurLinksViewController()
+//        let newsVC      =    MaterialsViewController()
         let libraryVC   =   MaterialsViewController()
 
         viewControllers = [
-            setUpNavigationController(title: "Новости", image: UIImage(systemName: "newspaper"), rootViewController: newsVC),
+//            setUpNavigationController(title: "Новости", image: UIImage(systemName: "newspaper"), rootViewController: newsVC),
             setUpNavigationController(title: "Библиотека", image: UIImage(systemName: "book"), rootViewController: libraryVC)
         ]
 
