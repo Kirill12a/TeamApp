@@ -11,46 +11,55 @@ import UIKit
 
 final class MaterialsViewController: UIViewController {
 
-    static var singltone = MaterialsViewController()
-    // private init
+// MARK: !! Singltone
+    static var singleton = MaterialsViewController()
+// ----------
 
-    private lazy var mainView = MaterialsView()
+    fileprivate lazy var mainView = MaterialsView()
 
-    // Это данные для collectionView
-    // хз тут это нужно делать или нет.
+//MARK: - Data for CollectionView
     let mainMaterialsName = [MainMaterialModel(name: "Apple Doka"), MainMaterialModel(name: "Swift Book")]
 
+//MARK: - loadView
     override func loadView() {
         super.loadView()
         self.view = mainView
+
     }
 
+//MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupDataAndDeleagateForTableAndCollection()
         view.backgroundColor = UIColor(named: "bg")
-        setupNavController()
+        navigationItem.backButtonTitle = ""
 
+    }
+
+//MARK: - viewWillAppear
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavController()
+    }
+
+//MARK: - ConnectingСommunication
+  private  func setupDataAndDeleagateForTableAndCollection(){
         mainView.collectionView.delegate        = self
         mainView.collectionView.dataSource      = self
-
         mainView.ourMaterialsTable.delegate     = self
         mainView.ourMaterialsTable.dataSource   = self
-
-
     }
 
-
-
-
+//MARK: - PressTheCell
     @objc func cellTouch(){
-
         let collectionVC = DetaiInformation ()
         navigationController?.pushViewController(collectionVC, animated: true)
-
     }
 
+//MARK: - SettingNavigationContoller
     private func setupNavController() {
         title = "Материалы"
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 0.442, green: 0.454, blue: 0.48, alpha: 1)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [
             .font: UIFont.systemFont(ofSize: 40, weight: .bold)
@@ -66,13 +75,13 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return MaterialsViewController.singltone.mainMaterialsName.count
+        return MaterialsViewController.singleton.mainMaterialsName.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellCollectionView
 
-        cell.nameLabel.text = MaterialsViewController.singltone.mainMaterialsName[indexPath.row].name
+        cell.nameLabel.text = MaterialsViewController.singleton.mainMaterialsName[indexPath.row].name
         cell.destinationImage.image = UIImage(named: "cell")
 
         cell.layer.cornerRadius = 12.0
@@ -93,7 +102,6 @@ extension MaterialsViewController: UICollectionViewDelegate, UICollectionViewDat
 //MARK: - TableView
 extension MaterialsViewController: UITableViewDataSource, UITableViewDelegate {
 
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         OurMaterials.allCases.count
     }
@@ -109,12 +117,13 @@ extension MaterialsViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = OurMaterials.allCases[index].rowTitle
         cell.accessoryType = .disclosureIndicator
 
+        cell.selectionStyle = .none
+
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         cellTouch()
     }
-
 
 }

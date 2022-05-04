@@ -35,7 +35,7 @@ class CellCollectionView: UICollectionViewCell {
         NSLayoutConstraint.activate([
             nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: contentView.bounds.height / 2),
-            nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -(contentView.bounds.width / 2.3)),
+            nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -(contentView.bounds.width / 2.6)), // 2.4 было
             nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         ])
         

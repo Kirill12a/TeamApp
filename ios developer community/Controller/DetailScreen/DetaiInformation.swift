@@ -7,58 +7,68 @@
 
 import UIKit
 
-class DetaiInformation: UIViewController {
+final class DetaiInformation: UIViewController {
 
-    let mainMaterialsName = [MainMaterialModel(name: "Apple Doka"), MainMaterialModel(name: "Swift Book")]
+// данные для collection
+    var testText = ["RoadMap", "Слитые курсы", "Создатель сообщества", "Coffe & Code"]
 
+    //MARK: - !!!!!!!!!
+    private lazy var mainView = DetailInfoView()
+    // ---------------
 
-    var myCollectionView:UICollectionView?
+//MARK: - loadView()
+    override func loadView() {
+        super.loadView()
+        self.view = mainView
+    }
 
+//MARK: - viewWillAppear()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+
+//MARK: - viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Hello"
-        view.backgroundColor = .purple
+        view.backgroundColor = .red
 
-        navigationController?.navigationBar.prefersLargeTitles = true
+        mainView.collectionView.delegate = self
+        mainView.collectionView.dataSource = self
 
-        let view = UIView()
-        view.backgroundColor = .white
-
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 60, height: 60)
-
-        myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        myCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-        myCollectionView?.backgroundColor = UIColor.white
-
-        myCollectionView?.dataSource = self
-        myCollectionView?.delegate = self
-
-        view.addSubview(myCollectionView ?? UICollectionView())
-
-        self.view = view
-
+        title = "Наши ссылки" // !!!
     }
 }
 
+//MARK: - CollectionView
+extension DetaiInformation: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-
-
-extension DetaiInformation: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mainMaterialsName.count // How many cells to display
+        return testText.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) 
-        myCell.backgroundColor = UIColor.blue
+        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CellCollectionView
+
+        myCell.nameLabel.text = testText[indexPath.row]
+        myCell.destinationImage.image = UIImage(named: "cell")
+
+        myCell.layer.cornerRadius = 12.0
+
+        myCell.backgroundColor = UIColor(red: 0.788, green: 0.8, blue: 0.82, alpha: 0.24)
         return myCell
     }
-}
-extension DetaiInformation: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("User tapped on item \(indexPath.row)")
+        print("User tapped on item \(indexPath.row)")
     }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)-> CGSize{
+        return CGSize(width: view.frame.width - 33,  height: view.frame.height / 17 )
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top:20, left: 16, bottom: 10, right: 16)
+    }
+
 }

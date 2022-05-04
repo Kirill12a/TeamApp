@@ -19,6 +19,7 @@
 		D28787132815751D006CB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28787122815751D006CB00B /* Assets.xcassets */; };
 		D28787162815751D006CB00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28787142815751D006CB00B /* LaunchScreen.storyboard */; };
 		D2DED84728230BB8002DC2AB /* DetaiInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DED84628230BB8002DC2AB /* DetaiInformation.swift */; };
+		D2DED84A28231C84002DC2AB /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DED84928231C84002DC2AB /* DetailInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D28787152815751D006CB00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D28787172815751D006CB00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2DED84628230BB8002DC2AB /* DetaiInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiInformation.swift; sourceTree = "<group>"; };
+		D2DED84928231C84002DC2AB /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
 		DFCF241D9D5899B40522414F /* Pods-ios developer community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios developer community.debug.xcconfig"; path = "Target Support Files/Pods-ios developer community/Pods-ios developer community.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 			children = (
 				D28787142815751D006CB00B /* LaunchScreen.storyboard */,
 				D245D7C7281B248800180AD0 /* MaterialsView.swift */,
+				D2DED84928231C84002DC2AB /* DetailInfoView.swift */,
 				D245D7C9281B249900180AD0 /* MaterialsScreenCellCollectionView */,
 			);
 			path = View;
@@ -291,6 +294,7 @@
 				D245D7D0281B24CF00180AD0 /* MainMaterialsModel.swift in Sources */,
 				D245D7CE281B24C400180AD0 /* OurMaterials.swift in Sources */,
 				D287870C2815751B006CB00B /* SceneDelegate.swift in Sources */,
+				D2DED84A28231C84002DC2AB /* DetailInfoView.swift in Sources */,
 				D2DED84728230BB8002DC2AB /* DetaiInformation.swift in Sources */,
 				D245D7C6281B246B00180AD0 /* TabBar.swift in Sources */,
 			);
