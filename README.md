@@ -1,2 +1,2 @@
 # TeamApp
-## отсылка к проекту со swift code 
+## отсылка к проекту со swift code.
